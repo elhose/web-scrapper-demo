@@ -23,7 +23,7 @@ public class Scrapper {
         WebClient client = createClient();
         try {
             HtmlPage page = client.getPage(baseUrl);
-            printElement(page.asText());
+            System.out.println(page.asText());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -44,7 +44,7 @@ public class Scrapper {
 
                 String newsJson = mapToJson(new News(id, Integer.valueOf(position), title, new URL(url), author, Integer.valueOf(points)));
 
-                printElement(newsJson);
+                System.out.println(newsJson);
             }
 
         } catch (IOException e) {
@@ -64,10 +64,6 @@ public class Scrapper {
         client.getOptions().setJavaScriptEnabled(false);
         client.setAjaxController(new NicelyResynchronizingAjaxController()); // TODO: 24.04.2020 check how this option works
         return client;
-    }
-
-    private void printElement(String element) {
-        System.out.println(element);
     }
 
 }
