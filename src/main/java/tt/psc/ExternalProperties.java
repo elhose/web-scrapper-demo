@@ -10,8 +10,8 @@ public class ExternalProperties {
     }
 
     private static final String NAME_OF_PROPERTIES_FILE = "app.properties";
-    private static Properties properties = new Properties();
-    private static InputStream inputStream = ExternalProperties.class.getClassLoader().getResourceAsStream(NAME_OF_PROPERTIES_FILE);
+    private static final Properties properties = new Properties();
+    private static final InputStream inputStream = ExternalProperties.class.getClassLoader().getResourceAsStream(NAME_OF_PROPERTIES_FILE);
 
     public static String getProperty(String property) {
         try {
