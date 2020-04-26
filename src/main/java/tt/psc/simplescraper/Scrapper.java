@@ -7,6 +7,7 @@ import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import tt.psc.simplescraper.pojo.News;
 
 import java.io.IOException;
 import java.net.URL;

@@ -1,4 +1,4 @@
-package tt.psc.simplescraper;
+package tt.psc.simplescraper.pojo;
 
 import java.net.URL;
 
