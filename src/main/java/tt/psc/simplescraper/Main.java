@@ -4,7 +4,7 @@ import tt.psc.ExternalProperties;
 
 public class Main {
 
-    private static final String url = ExternalProperties.getProperty("simplescraper.url");
+    private static final String url = ExternalProperties.getProperty("simple.scraper.url");
 
     public static void main(String[] args) {
 
