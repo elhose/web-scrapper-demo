@@ -1,8 +1,10 @@
 package tt.psc.submitformandscrape;
 
+import tt.psc.ExternalProperties;
+
 public class Main {
 
-    private static final String baseUrl = "https://www.javawebscrapingsandbox.com/product/search";
+    private static final String baseUrl = ExternalProperties.getProperty("submitformandscrape.url");
 
     public static void main(String[] args) {
         SubmitForm submitForm = new SubmitForm(baseUrl);
